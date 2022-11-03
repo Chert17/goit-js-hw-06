@@ -4,12 +4,12 @@ const valEl = document.querySelector("#value");
 
 let value = 0;
 
-incr.addEventListener("click", function () {
+incr.addEventListener("click", (event) => {
   value += 1;
   valEl.textContent = value;
 });
 
-decr.addEventListener("click", function () {
+decr.addEventListener("click", (event) => {
   value -= 1;
   valEl.textContent = value;
 });
