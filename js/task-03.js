@@ -19,6 +19,6 @@ const markupItems = images.map((img) => {
 
 const galleryList = document.querySelector(".gallery");
 
-galleryList.insertAdjacentHTML("beforeend", markupItems);
-galleryList.style = "list-style: none; display: flex";
+galleryList.insertAdjacentHTML("beforeend", markupItems.join(""));
+galleryList.style = "list-style: none; display: flex; gap: 10px;";
 console.log(galleryList);
