@@ -1,17 +1,19 @@
-const decr = document.querySelector("[data-action=decrement]");
-const incr = document.querySelector("[data-action=increment]");
-const valEl = document.querySelector("#value");
+const refs = {
+  decr: document.querySelector("[data-action=decrement]"),
+  incr: document.querySelector("[data-action=increment]"),
+  valEl: document.querySelector("#value"),
+};
 
 let value = 0;
 
-incr.addEventListener("click", (event) => {
+refs.incr.addEventListener("click", () => {
   value += 1;
-  valEl.textContent = value;
+  refs.valEl.textContent = value;
 });
 
-decr.addEventListener("click", (event) => {
+refs.decr.addEventListener("click", () => {
   value -= 1;
-  valEl.textContent = value;
+  refs.valEl.textContent = value;
 });
 
 // const counter = {
