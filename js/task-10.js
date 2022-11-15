@@ -11,7 +11,7 @@ const refs = {
   box: document.querySelector("#boxes"),
 };
 
-refs.createBtn.addEventListener("click", (event) => {
+refs.createBtn.addEventListener("click", () => {
   createBoxes(refs.input.value);
 });
 
